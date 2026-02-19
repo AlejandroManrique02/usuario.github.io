@@ -1,0 +1,204 @@
+/*Selector de etiqueta*/
+body{
+    background-color: lightgoldenrodyellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    color: black;
+}
+/*Selctor de clase (más especifico que el de etiqueta)*/
+.titulo{
+    border:4pt;
+}
+/*Selector de id (más específico que los anteriores)*/
+#ENL, #ENL_INT{
+    font-size: 14pt;
+    color: blueviolet;
+}
+
+/*Selector de descendientes (se lee de derecha a izquierda)*/
+body p{
+    text-align: justify;
+}
+
+/*Estilo de la tabla*/
+/*Selector universal (*)*/
+table *{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: black;
+    border-style: double;
+    border-width: 1px;
+}
+
+table tbody{
+    background-color: rgb(255,127,180);
+    height: 50px;
+}
+
+caption{
+    color: cadetblue;
+    font-size: 25px;
+    background-color: yellowgreen;
+}
+
+th{
+    border-color: rgb(0, 2, 90);
+    border-style: dotted;
+    border-width: 1pt;
+}
+
+td{
+    border-color: palevioletred;
+    color: yellow;
+    border-style: solid;
+    border-width: 1pt;
+}
+
+#firma{
+    background-color: crimson;
+    border: 5pt;
+    border-color: aqua;
+    border-style: groove;
+    font-size: 10pt;
+    margin-top: 10px;
+}
+
+#firma p{
+    text-align: center;
+}
+
+.contenedor{
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+    border: black 5px solid;
+}
+
+.caja1, .caja2{
+    box-sizing: border-box;
+    height: 200px;
+    width: 50%;
+    padding: 10px;
+}
+.caja1{
+    background-color: lightgray;
+    float: left;
+}
+
+.caja2{
+    background: magenta;
+    float: right;
+}
+
+.caja3{
+    background-color: yellow;
+    box-sizing: content-box;
+    width: calc(100%-10px); /*ocupa todo el ancho menos lo que ocupa el borde del contenedor*/
+    height: 170px;
+    margin: 10px auto; /*se coloca debajo de las otras dos cajas automáticamente*/
+    clear: both;
+    padding: 10px;
+}
+
+.fuera{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    border: green 5px double;
+    background-color: lightgreen;
+    margin-top: 10px;
+}
+
+.titulo{
+    background-color: rgb(20, 220, 153);
+    border: 10pt;
+    border-color: rgb(155, 41, 184);
+    border-style: double;
+    text-align: center;
+    font-size: 10pt;
+}
+
+.intro{
+    border: 3pt;
+    border-color: rgb(224, 20, 20);
+    border-style: dotted;
+    font-size: 12pt;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.cont123{
+    box-sizing: border-box;
+    border: black 5px solid;
+    margin-top: 10px;
+}
+
+.cont123::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.cont1, .cont2, .cont3{
+    box-sizing: border-box;
+    float: left;
+    width: 33%;
+    padding: 5px;
+}
+
+.cont1{
+    background-color: lightgray;
+}
+
+.cont2{
+    background-color: rgb(89, 112, 87);
+}
+
+.cont3{
+    background-color: rgb(241, 94, 57);
+}
+
+.cont45{
+    background-color: rgb(21, 161, 196);
+    border: blue 5px solid;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+h2{
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+    font-size: 25px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+h3{
+    font-style: italic;
+    text-decoration: underline dotted;
+}
+
+.intro :first-of-type:first-letter{
+    font-size: 200%;
+    color: purple;
+}
+
+a:visited:hover{
+    color:green;
+   }
+
+figcaption{
+    font: 12px grey;
+    font-style: oblique;
+    text-align: center;
+}
+figcaption::before{
+    content: "";
+    display: block;
+    height: 5px;
+}
+
+table{
+    width: 40%;
+    margin: 0 auto;
+}
